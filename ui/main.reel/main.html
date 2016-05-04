@@ -16,45 +16,11 @@
                 "draggable": "true"
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "button"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "enabled": true,
-                "label": "Nueva tarea"
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": true,
-                    "listener": {"@": "actionEventListener"}
-                }
-            ]
-        },
-        "list": {
-            "prototype": "digit/ui/list.reel",
-            "properties": {
-                "element": {"#": "list"},
-                "contentController": {"@": "rangeController"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            }
-        },
-        "rangeController": {
-            "prototype": "montage/core/range-controller"
-        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
                 "element": {"#": "title"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "Cosas por hacer"
+                "value": "todo"
             }
         }
     }
@@ -63,10 +29,6 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
-        <button data-montage-id="button"></button>
-        <ul data-montage-id="list">
-
-        </ul>
     </div>
 </body>
 </html>
